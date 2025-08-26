@@ -3,7 +3,6 @@ import time
 import os
 from dotenv import load_dotenv
 
-# Загружаем переменные из .env файла
 load_dotenv()
 
 TOKEN = os.getenv("BOT_TOKEN")
@@ -22,7 +21,7 @@ def send_message(chat_id, text):
     return response.json()
 
 def main():
-    print("Простой эхо-бот запущен...")
+    print("Эхо-бот запущен...")
     last_update_id = None
     
     while True:
